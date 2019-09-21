@@ -1,5 +1,11 @@
+html {
+    min-height: 100%;
+}
+
 body {
-    background-color: #e1e1e1;
+    background: linear-gradient(to right top, white, hsl(265, 100%, 66%));
+    position: relative;
+    min-height: 100%;
 }
 
 .header {
@@ -46,7 +52,7 @@ body {
 }
 
 .centered-image {
-    width:  60%;
+    width: 60%;
     max-height: 600px;
 }
 
