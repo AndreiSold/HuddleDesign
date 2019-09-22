@@ -8,6 +8,10 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 #main-container {
     max-width: 2000px;
     margin: 0 auto;
@@ -55,11 +59,26 @@ body {
 .footer-social {
     grid-area: social;
     display: block;
+    margin: 0 20px;
 }
 
 .footer-links {
     grid-area: links;
-    display: block;
+    display: table;
+    margin: auto 20px;
+}
+
+.link {
+    color: hsl(214, 64%, 98%);
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 7px 0px;
+    margin: 2px 15px;
+}
+
+.footer-link {
+    display: table-cell;
 }
 
 .footer-subscribe {
@@ -273,9 +292,14 @@ body {
 
     #footer-grid {
         grid-template: 'social' 'links' 'subscribe';
-        /*check if text align needed*/
-        text-align: center;
     }
+
+    .white-title, .footer-paragraph, #social-images {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
 
 @media screen and (max-width: 800px) {
