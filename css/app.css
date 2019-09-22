@@ -36,6 +36,37 @@ body {
     min-width: 220px;
 }
 
+#footer {
+    background-color: hsl(192, 100%, 9%);
+    width: 100%;
+    margin-top: 100px;
+}
+
+#footer-grid {
+    display: grid;
+    grid-template: 'social links subscribe';
+    grid-template-columns: 1fr 1fr 1fr;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.footer-social {
+    grid-area: social;
+    display: block;
+}
+
+.footer-links {
+    grid-area: links;
+    display: block;
+}
+
+.footer-subscribe {
+    grid-area: subscribe;
+    display: block;
+}
+
 .right-content {
     width: 50%;
     display: table-cell;
@@ -105,8 +136,16 @@ body {
     margin-bottom: 50px !important;
 }
 
+.mb-1 {
+    margin-bottom: 10px !important;
+}
+
 .mt-2 {
     margin-top: 20px !important;
+}
+
+.mt-0 {
+    margin-top: 0 !important;
 }
 
 .centered {
@@ -133,6 +172,35 @@ body {
     width: 90%;
 }
 
+.width-100 {
+    width: 100%;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+#social-images {
+    width: 25%;
+    display: table;
+}
+
+.social-image-container {
+    display: table-cell;
+}
+
+.social-image {
+    width: 25px;
+    height: 25px;
+}
+
+.footer-paragraph {
+    color: hsl(214, 64%, 98%);
+    font-weight: 400;
+    font-family: Poppins;
+    font-size: 12px;
+}
+
 .get-started-button {
     width: 20%;
     min-width: 150px;
@@ -148,6 +216,13 @@ body {
 
 .get-started-button:hover {
     background-color: hsl(280, 100%, 66%);
+}
+
+.white-title {
+    font-family: "Open Sans";
+    color: hsl(214, 64%, 98%);
+    font-weight: 700;
+    font-size: 40px;
 }
 
 .big-subtitle {
@@ -196,6 +271,11 @@ body {
         width: 90%;
     }
 
+    #footer-grid {
+        grid-template: 'social' 'links' 'subscribe';
+        /*check if text align needed*/
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 800px) {
