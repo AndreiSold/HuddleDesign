@@ -29,7 +29,7 @@ a {
 
 #bottom-container {
     width: 30%;
-    margin: 30px auto;
+    margin: 75px auto;
     border-radius: 2px;
     border: solid 1px white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
@@ -84,6 +84,7 @@ a {
 .footer-subscribe {
     grid-area: subscribe;
     display: block;
+    margin: auto 20px;
 }
 
 .right-content {
@@ -187,6 +188,10 @@ a {
     max-width: 500px;
 }
 
+.width-80 {
+    width: 80%;
+}
+
 .width-90 {
     width: 90%;
 }
@@ -197,6 +202,10 @@ a {
 
 .text-align-left {
     text-align: left;
+}
+
+.text-align-right {
+    text-align: right;
 }
 
 #social-images {
@@ -222,7 +231,7 @@ a {
 
 .get-started-button {
     width: 20%;
-    min-width: 150px;
+    min-width: 100px;
     height: 35px;
     border: transparent;
 
@@ -244,6 +253,13 @@ a {
     font-size: 40px;
 }
 
+.white-smaller-title {
+    font-family: "Open Sans";
+    color: hsl(214, 64%, 98%);
+    font-weight: 700;
+    font-size: 20px;
+}
+
 .big-subtitle {
     font-size: 25px;
     font-weight: 700;
@@ -262,6 +278,72 @@ a {
 
 .section-wrapper {
     width: 80%;
+}
+
+.text-input {
+    height: 25px;
+    border-radius: 4px;
+    border-color: transparent;
+    width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    #bottom-container {
+        width: 50%;
+    }
+
+    #footer-grid {
+        grid-template: 'social subscribe' 'links .';
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .left-image-container {
+        width: 100%;
+        margin-bottom: 50px;
+        display: block;
+
+    }
+
+    .left-image {
+        width: 50%;
+    }
+
+    .right-content {
+        width: 100%;
+        display: block;
+    }
+
+    .middle-container {
+        display: block;
+    }
+
+    .white-smaller-title {
+        text-align: center;
+    }
+
+    .text-input-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section-wrapper {
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        width: 70%;
+    }
+
+    .button-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    #footer-grid {
+        grid-template: 'social links' 'subscribe .';
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -300,40 +382,8 @@ a {
         margin-right: auto;
     }
 
-}
-
-@media screen and (max-width: 800px) {
-    .left-image-container {
-        width: 100%;
-        margin-bottom: 50px;
-        display: block;
-
-    }
-
-    .left-image {
-        width: 50%;
-    }
-
-    .right-content {
-        width: 100%;
-        display: block;
-    }
-
-    .middle-container {
-        display: block;
-    }
-
-    .section-wrapper {
-        text-align: center;
-        margin-right: auto;
-        margin-left: auto;
-        width: 70%;
-    }
-
-}
-
-@media screen and (max-width: 1000px) {
-    #bottom-container {
-        width: 50%;
+    .footer-links {
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 }
