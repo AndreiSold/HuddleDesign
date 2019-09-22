@@ -23,6 +23,19 @@ body {
     display: table;
 }
 
+#bottom-container {
+    width: 30%;
+    margin: 30px auto;
+    border-radius: 2px;
+    border: solid 1px white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+
+    min-width: 220px;
+}
+
 .right-content {
     width: 50%;
     display: table-cell;
@@ -56,7 +69,12 @@ body {
     -o-transform: translateY(-50%);
     top: 50%;
     right: 0;
-    border: transparent;
+    border-radius: 2px;
+    border: solid 1px white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 
     font-family: Poppins;
     font-weight: normal;
@@ -84,7 +102,11 @@ body {
 }
 
 .mb-5 {
-    margin-bottom: 50px;
+    margin-bottom: 50px !important;
+}
+
+.mt-2 {
+    margin-top: 20px !important;
 }
 
 .centered {
@@ -107,8 +129,13 @@ body {
     max-width: 500px;
 }
 
+.width-90 {
+    width: 90%;
+}
+
 .get-started-button {
-    width: 200px;
+    width: 20%;
+    min-width: 150px;
     height: 35px;
     border: transparent;
 
@@ -168,6 +195,7 @@ body {
     .left-image {
         width: 90%;
     }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -197,6 +225,11 @@ body {
         margin-left: auto;
         width: 70%;
     }
+
 }
 
-
+@media screen and (max-width: 1000px) {
+    #bottom-container {
+        width: 50%;
+    }
+}
